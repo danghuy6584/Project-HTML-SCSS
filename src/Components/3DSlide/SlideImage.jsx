@@ -3,7 +3,7 @@ import "./SlideImage.scss";
 
 function SlideImage() {
   return (
-    <body>
+    <>
       <div className="baner">
         <div className="slider" style={{ "--quantity": 12 }}>
           <div className="item" style={{ "--position": 1 }}>
@@ -88,7 +88,7 @@ function SlideImage() {
           <div className="model"></div>
         </div>
       </div>
-    </body>
+    </>
   );
 }
 

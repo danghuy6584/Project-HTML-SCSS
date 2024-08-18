@@ -1,33 +1,5 @@
 @import url("https://fonts.cdnfonts.com/css/ica-rubrik-black");
 @import url("https://fonts.cdnfonts.com/css/poppins");
-body {
-  background-color: #d2d2d2;
-  background-image: repeating-linear-gradient(
-      to right,
-      transparent 0 100px,
-      #25283b22 100px 101px
-    ),
-    repeating-linear-gradient(
-      to bottom,
-      transparent 0 100px,
-      #25283b22 100px 101px
-    );
-  margin: 0 auto;
-  &::before {
-    position: absolute;
-    width: min(1400px, 90vw);
-    top: 10%;
-    left: 50%;
-    height: 90%;
-    transform: translateX(-50%);
-    content: "";
-    background-image: url("https://github.com/HoanghoDev/youtube_v2/blob/main/slider_3d/images/bg.png?raw=true");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: top center;
-    pointer-events: none;
-  }
-}
 
 .baner {
   width: 100%;
@@ -43,7 +15,7 @@ body {
     left: calc(50% - 100px);
     transform-style: preserve-3d;
     transform: perspective(1000px);
-    animation: autoRun 20s linear infinite;
+    animation: autoRun1 20s linear infinite;
     z-index: 2;
     .item {
       position: absolute;
@@ -110,7 +82,7 @@ body {
     }
   }
 }
-@keyframes autoRun {
+@keyframes autoRun1 {
   from {
     transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
   }
